@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+      <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="style.css" />
+		<title>bitAUD-AUD Gateway Service: <!--#echo var="title" --></title>
+   </head>
+   <body>
+     <div id="content">
+       <div class="sidebar" id="myTopnav">
+	 <a href="index.shtml">Home</a>
+	 <a href="apply.shtml">Apply</a>
+	 <a href="contact.shtml">Contact</a>
+	 <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">☰</a>
+       </div>
+       <div id=main>
+	 <h2>
+	   <!--#echo var="title" -->
+	 </h2>
+	 <p id=warning></p>
+				   
+				     

@@ -1,0 +1,4 @@
+<!--#set var="title" value="Main" -->
+<!--#include virtual="header.shtml" -->
+This is the main page.
+<!--#include virtual="footer.shtml" -->
