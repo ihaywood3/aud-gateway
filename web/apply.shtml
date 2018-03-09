@@ -19,7 +19,7 @@
   <li>bitAUD that I sell are purchased or borrowed by me on existing markets. I do not issue or control bitAUD.
 </ol></p>
 <h4>bitAUD not backed by Australian currency</h4>
-<p><ol start="3">
+<p><ol start="4">
   <li>bitAUD are not backed by any reserve of cash held by me or anyone else. There is no right to redeem
     or exchange bitAUD for cash.
   <li>My Facility may cease operating or be suspended, permantently or temporarily, at any time, without warning. You
@@ -30,13 +30,13 @@
     have responsibility for theft, loss, loss of value, or other problems from Your bitAUD holdings.
 </ol></p>
 <h4>BitShares Settlement Facility</h4>
-<p><ol start="5">
+<p><ol start="7">
   <li>The BitShares system includes its own settlement facility, which will redeem all bitAUD for theirc
     current value in BitShares. This facility will only provide BItShares, never AUD cash.
   <li>This facility is not owned or operated by Me. I have no greater access to it than You.
 </ol></p>
 <h4>Ongoing Risks</h4>
-<p><ol start="7">
+<p><ol start="9">
   <li>bitAUD are backed by at least 175% of their value in BitShares at the point of their creation. If the value of BitShares
     falls by more than 42% from this point, the system may not have enogh reserve to cover all bitAUD on issue (whether sold by me or not)
     and so bitAUD holders may face a loss, which is potentially unlimited (i.e. holdings  have zero value)
@@ -45,7 +45,7 @@
   <li>If your bitAUD are stolen due to system compromise, there is nomability to recover stolen funds or reverse transactions
 </ol></p>
 <h4>KYC and AUSTRAC</h4>
-<p><ol start="10">
+<p><ol start="12">
   <li>You must complete Know-Your-Customer process as required by AUSTRAC. Your personal information will be stored,
     and may be released to AUSTRAC or the Australian Federal Police in accordance with Australian law.
     Your information will not be passed to private third-parties.
@@ -53,12 +53,9 @@
 </ol></p>
 <h3>Application</h3>
 <form method="post" action="cgi-bin/new.py" enctype="multipart/form-data">
+<p><input type="checkbox" name="read" id="checkbox" value="yes"><label for="checkbox">I have read and understood the above information</label></p>
   <table class="formfields">
     <tbody>
-      <tr>
-	<td></td>
-	<td><input type="checkbox" name="read" id="checkbox" value="yes"><label for="checkbox">I have read and understood the above information</label></td>
-      </tr>
       <tr>
 	<td>Name</td>
 	<td><input type="text" name="name" placeholder="Full name" autocomplete="name" required length="50"></td>
@@ -88,11 +85,16 @@
 	<td><input type="text" name="address" placeholder="123 Any Street" autocomplete="shipping street-address" length="50"></td>
       <tr>
       <tr><td></td>
-	<td><input type="text" name="town" length="50" autocomplete="shipping locality">Postcode: <input type="text" name="psotcode" autocomplete="shipping postal-code" length="5"></td>
+	<td><input type="text" name="town" length="50" autocomplete="shipping locality" placeholder="Town"></td>
+      </tr>
+      <tr>
+	<td>Postcode</td>
+	<td><input type="text" name="psotcode" autocomplete="shipping postal-code" length="5"></td>
       </tr>
       <tr>
 	<td>Telephone</td>
-	<td><input type="tel" name="phone" placeholder="02 1234 5678" autocomplete="tel"
+	<td><input type="tel" name="phone" placeholder="02 1234 5678" autocomplete="tel"></td>
+      </tr>
       <tr>
 	<td>Drivers Licence <small><a href="instr.shtml#licence">[INSTRUCTIONS]</a></small></td>
 	<td><input type="file" name="drivers1"></td>
