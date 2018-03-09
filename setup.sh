@@ -1,4 +1,7 @@
 #!/bin/bash
+set -e
+set -x
+
 cd ~
 apt-get update
 apt-get install -y python3-gpg pinentry-tty git python3-pip apache2 wget
