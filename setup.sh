@@ -16,12 +16,14 @@ fi
 if [ ! -h /usr/local/lib/cgi-bin ] ; then
     ln -s ~/aud-gateway/cgi-bin /usr/local/lib/cgi-bin
 fi
-if [ ! -h /usr/www/gateway ] ; then
-    ln -s ~/aud-gateway/web /usr/www/gateway
+if [ ! -h /var/www/gateway ] ; then
+    ln -s ~/aud-gateway/web /var/www/gateway
 fi
 if [ ! -f /etc/apache2/sites-available/gateway.conf ] ; then
-    ln ~/apache.conf /etc/apache2/sites-available/gateway.conf
+    ln ~/aud-gateway/gateway.conf /etc/apache2/sites-available/gateway.conf
 fi
+a2enmod include
+a2enmod cgi
 a2ensite gateway
 a2dissite 000-default
 systemctl restart apache2
