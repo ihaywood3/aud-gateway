@@ -9,13 +9,13 @@
   <dt>You</dt>
   <dd>The applicant</dd>
   <dt>The Facility</dt>
-  <dd>This factility for converting bitAUD to AUD cash and vice-versa</dd>
+  <dd>This facility for converting bitAUD to AUD cash and vice-versa</dd>
 </dl></p>
 <h4>Nature of Product</h4>
 <p><ol>
   <li>bitAUD is a crypto-currency designed to maintain a value of one Australian dollar (AUD) over time.</li>
-  <li>bitAUD is part of the <a href="">BitShares</a> system. Users of the system must independently (i.e without
-    my assistance) have opened and operate a BitShares account before using the Facility.
+  <li>bitAUD is part of the <a href="http://bitshares.org">BitShares</a> system. Users of the system must independently
+    have opened and operate a BitShares account before using the Facility.
   <li>bitAUD that I sell are purchased or borrowed by me on existing markets. I do not issue or control bitAUD.
 </ol></p>
 <h4>bitAUD not backed by Australian currency</h4>
@@ -29,9 +29,10 @@
   <li>Once a sale is completed, <b>there is no further business relationship between You and I</b>, and I do not
     have responsibility for theft, loss, loss of value, or other problems from Your bitAUD holdings.
 </ol></p>
+
 <h4>BitShares Settlement Facility</h4>
 <p><ol start="7">
-  <li>The BitShares system includes its own settlement facility, which will redeem all bitAUD for theirc
+  <li>The BitShares system includes its own settlement facility, which will redeem all bitAUD for their
     current value in BitShares. This facility will only provide BItShares, never AUD cash.
   <li>This facility is not owned or operated by Me. I have no greater access to it than You.
 </ol></p>
@@ -39,42 +40,42 @@
 <p><ol start="9">
   <li>bitAUD are backed by at least 175% of their value in BitShares at the point of their creation. If the value of BitShares
     falls by more than 42% from this point, the system may not have enogh reserve to cover all bitAUD on issue (whether sold by me or not)
-    and so bitAUD holders may face a loss, which is potentially unlimited (i.e. holdings  have zero value)
-  <li>Like all crypto-currencies, bitAUD are controlled by private keys held on your wallet software. I do not hold bitAUD on user's behalf.
-    You are solely responsibile for security of your system.
-  <li>If your bitAUD are stolen due to system compromise, there is nomability to recover stolen funds or reverse transactions
+    and so bitAUD holders may face a loss, which is potentially unlimited (i.e. holdings have zero value)
+  <li>Like all crypto-currencies, bitAUD are controlled by private keys held on your wallet software. I never hold bitAUD on Your behalf.
+    If keys or passwords are lost, there is no means of recovery.
+  <li>Transactions on the BitShares system are completely irreversible, even in clear cases of fraud or theft.  
 </ol></p>
 <h4>KYC and AUSTRAC</h4>
 <p><ol start="12">
-  <li>You must complete Know-Your-Customer process as required by AUSTRAC. Your personal information will be stored,
-    and may be released to AUSTRAC or the Australian Federal Police in accordance with Australian law.
-    Your information will not be passed to private third-parties.
-  <li>If you cease to be a customer, your information will be secured stored offline, but retained, as required by law.
+    <li>You must complete Know-Your-Customer process as required by AUSTRAC.
+      See the <a href="privacy.shtml">Privacy Policy</a> and
+      <a href="aml-policy.pdf">AML/CTF Policy</a>.
 </ol></p>
 <h3>Application</h3>
 <form method="post" action="cgi-bin/new.py" enctype="multipart/form-data">
-<p><input type="checkbox" name="read" id="checkbox" value="yes"><label for="checkbox">I have read and understood the above information</label></p>
+  <p><input type="checkbox" name="read" id="checkbox" value="yes" onchange="on_check">
+    <label for="checkbox">I have read and understood the above information</label></p>
   <table class="formfields">
     <tbody>
       <tr>
 	<td>Name</td>
-	<td><input type="text" name="name" placeholder="Full name" autocomplete="name" required length="50"></td>
+	<td><input type="text" name="name" placeholder="Full name" autocomplete="name" length="50"></td>
       </tr>
       <tr>
 	<td>BSB</td>
-	<td><input type="text" name="bsb" placeholder="BSB" length="6" required></td>
+	<td><input type="text" name="bsb" placeholder="BSB" length="6"></td>
       </tr>
       <tr>
 	<td>Account Number</td>
-	<td><input type="text" name="account_no" placeholder="Account Number" required length="50"></td>
+	<td><input type="text" name="account_no" placeholder="Account Number"  length="50"></td>
       </tr>
       <tr>
-	<td>BitShares User ID</td>
+	<td>BitShares Account ID</td>
 	<td><input type="text" name="bts_account" placeholder="BitShares Account ID" required length="50"></td>
       </tr>
       <tr>
 	<td>E-mail Address</td>
-	<td><input type="email" name="email" placeholder="name@example.com" required autocomplete="email" length="50"></td>
+	<td><input type="email" name="email" placeholder="name@example.com" autocomplete="email" length="50"></td>
       </tr>
       <tr>
 	<td>Date of Birth</td>
@@ -89,29 +90,47 @@
       </tr>
       <tr>
 	<td>Postcode</td>
-	<td><input type="text" name="psotcode" autocomplete="shipping postal-code" length="5"></td>
+	<td><input type="text" name="psotcode" autocomplete="shipping postal-code" placeholder="1234" length="5"></td>
       </tr>
       <tr>
 	<td>Telephone</td>
 	<td><input type="tel" name="phone" placeholder="02 1234 5678" autocomplete="tel"></td>
       </tr>
       <tr>
-	<td>Drivers Licence <small><a href="instr.shtml#licence">[INSTRUCTIONS]</a></small></td>
-	<td><input type="file" name="drivers1"></td>
+	<td>Allow Third-Party Accounts<br/>
+	  <small><a href="instr.shtml#thirdparty">[EXPLANATION]</a></small>
+	</td>
+	<td>
+	  <input type="radio" name="allow_thirdparty" value="t" id="third_yes">
+	  <label for="third_yes">&nbsp;Yes</label> 
+	  <input type="radio" name="allow_thirdparty" value="f" id="third_no" checked>
+	  <label for="third_No">&nbsp;No</label>&nbsp;
+	  
+      <tr>
+	<td>Drivers Licence<br/><small><a href="instr.shtml#licence">[INSTRUCTIONS]</a></small></td>
+	<td><input type="file" name="drivers1" required></td>
       </tr>
       <tr>
 	<td>Drivers Licence (Back)</td>
 	<td><input type="file" name="drivers2"></td>
       </tr>
       <tr>
-	<td>Selfie <small><a href="instr.shtml#selfie">[INSTRUCTIONS]</a></small></td>
+	<td>Selfie<br/><small><a href="instr.shtml#selfie">[INSTRUCTIONS]</a></small></td>
 	<td><input type="file" name="selfie"></td>
       </tr>
       <tr>
 	<td></td>
-	<td><input type="submit" name="Submit"></td>
+	<td><input type="submit" name="Submit" id="submit" disabled></td>
       </tr>
     </tbody>
   </table>
 </form>
+
+<script>
+  function on_check(event)
+  {
+    document.getElementById("submit").disabled = false;
+  }
+</script>
+
 <!--#include virtual="footer.shtml" -->
