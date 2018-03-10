@@ -1,7 +1,7 @@
 <!--#set var="title" value="Apply for Account" -->
 <!--#include virtual="header.shtml" -->
 <h3>Product Disclosure</h3>
-<p>It is necessary you read and understand important information about the product before proceeding.</p>
+<p>It is necessary you read and understand important information about this service before proceeding.</p>
 <h4>Definitions</h4>
 <p><dl>
   <dt>I/Me/My</dt>
@@ -9,7 +9,7 @@
   <dt>You</dt>
   <dd>The applicant</dd>
   <dt>The Facility</dt>
-  <dd>This facility for converting bitAUD to AUD cash and vice-versa</dd>
+  <dd>This facility for converting bitAUD to AUD cash and vice-versa.</dd>
 </dl></p>
 <h4>Nature of Product</h4>
 <p><ol>
@@ -22,11 +22,11 @@
 <p><ol start="4">
   <li>bitAUD are not backed by any reserve of cash held by me or anyone else. There is no right to redeem
     or exchange bitAUD for cash.
-  <li>My Facility may cease operating or be suspended, permantently or temporarily, at any time, without warning. You
+  <li>My Facility may cease operating or be suspended, permanently or temporarily, at any time, without warning. You
     may not be able to exchange bitAUD for cash during this time. (But, You are free to exchange with other providers).
     In particular, I
     may suspend one half of the Facility (buying or selling) to maintain adequate stock of cash or bitAUD as required.
-  <li>Once a sale is completed, <b>there is no further business relationship between You and I</b>, and I do not
+  <li>Once a sale is completed, <b>there is no ongoing contract between You and I</b> -- I do not
     have responsibility for theft, loss, loss of value, or other problems from Your bitAUD holdings.
 </ol></p>
 
@@ -58,6 +58,24 @@
   <table class="formfields">
     <tbody>
       <tr>
+	<th colspan="2">
+	  Required Fields
+	</th>
+      </tr>
+            <tr>
+	<td>BitShares Account ID</td>
+	<td><input type="text" name="bts_account" placeholder="BitShares Account ID" required length="50"></td>
+      </tr>
+      <tr>
+	<td>E-mail Address</td>
+	<td><input type="email" name="email" placeholder="name@example.com" autocomplete="email" required length="50"></td>
+      </tr>
+      <tr>
+	<th colspan="2">
+	  Optional Fields
+	</th>
+      </tr>
+      <tr>
 	<td>Name</td>
 	<td><input type="text" name="name" placeholder="Full name" autocomplete="name" length="50"></td>
       </tr>
@@ -69,14 +87,7 @@
 	<td>Account Number</td>
 	<td><input type="text" name="account_no" placeholder="Account Number"  length="50"></td>
       </tr>
-      <tr>
-	<td>BitShares Account ID</td>
-	<td><input type="text" name="bts_account" placeholder="BitShares Account ID" required length="50"></td>
-      </tr>
-      <tr>
-	<td>E-mail Address</td>
-	<td><input type="email" name="email" placeholder="name@example.com" autocomplete="email" length="50"></td>
-      </tr>
+
       <tr>
 	<td>Date of Birth</td>
 	<td><input type="date" name="dob" placeholder="DD/MM/YYYY" length="50"></td>
@@ -105,7 +116,8 @@
 	  <label for="third_yes">&nbsp;Yes</label> 
 	  <input type="radio" name="allow_thirdparty" value="f" id="third_no" checked>
 	  <label for="third_No">&nbsp;No</label>&nbsp;
-	  
+	</td>
+      </tr>
       <tr>
 	<td>Drivers Licence<br/><small><a href="instr.shtml#licence">[INSTRUCTIONS]</a></small></td>
 	<td><input type="file" name="drivers1" required></td>
