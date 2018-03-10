@@ -12,4 +12,5 @@
   <li>You may request for your account to be closed, you informatiln will be deleted from the live system, but your information will be retained in offline backups, for a fixed period (five years or greater as required by law.)
     <li>You may request changes to your information, or details of what is stored about you, by writing to <tt>privacy@river-stone.com.au</tt>. 
 </ol>
-<!--#include virtual="footer.shtml">
+
+<!--#include virtual="footer.shtml"-->
