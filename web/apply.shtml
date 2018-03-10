@@ -53,7 +53,7 @@
 </ol></p>
 <h3>Application</h3>
 <form method="post" action="cgi-bin/new.py" enctype="multipart/form-data">
-  <p><input type="checkbox" name="read" id="checkbox" value="yes" onchange="on_check">
+  <p><input type="checkbox" name="read" id="checkbox" value="yes" onchange="on_check()">
     <label for="checkbox">I have read and understood the above information</label></p>
   <table class="formfields">
     <tbody>
@@ -90,7 +90,7 @@
       </tr>
       <tr>
 	<td>Postcode</td>
-	<td><input type="text" name="psotcode" autocomplete="shipping postal-code" placeholder="1234" length="5"></td>
+	<td><input type="text" name="postcode" autocomplete="shipping postal-code" placeholder="1234" length="5"></td>
       </tr>
       <tr>
 	<td>Telephone</td>
@@ -127,7 +127,7 @@
 </form>
 
 <script>
-  function on_check(event)
+  function on_check()
   {
     document.getElementById("submit").disabled = false;
   }
