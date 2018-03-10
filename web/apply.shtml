@@ -53,8 +53,8 @@
 </ol></p>
 <h3>Application</h3>
 <form method="post" action="cgi-bin/new.py" enctype="multipart/form-data">
-  <p><input type="checkbox" name="read" id="checkbox" value="yes" onchange="on_check()">
-    <label for="checkbox">I have read and understood the above information</label></p>
+  <p><input type="checkbox" name="read" id="check_read" value="yes" onchange="on_check()">
+    <label for="check_read">I have read and understood the above information</label></p>
   <table class="formfields">
     <tbody>
       <tr>
@@ -75,7 +75,7 @@
       </tr>
       <tr>
 	<td>E-mail Address</td>
-	<td><input type="email" name="email" placeholder="name@example.com" autocomplete="email" length="50"></td>
+	<td><input type="email" name="email" placeholder="name@example.com" autocomplete="email" required length="50"></td>
       </tr>
       <tr>
 	<td>Date of Birth</td>
@@ -129,7 +129,7 @@
 <script>
   function on_check()
   {
-    document.getElementById("submit").disabled = false;
+    document.getElementById("submit").disabled = ! document.getElementById("check_read").checked;
   }
 </script>
 
