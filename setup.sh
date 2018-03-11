@@ -27,3 +27,5 @@ a2enmod cgi
 a2ensite gateway
 a2dissite 000-default
 systemctl restart apache2
+
+gpg -a --export ian@haywood.id.au | sudo -u www-data gpg --homedir /var/www/ --import
