@@ -4,8 +4,9 @@ set -x
 
 cd ~
 apt-get update
-apt-get install -y python3-gpg pinentry-tty git python3-pip apache2 wget
+apt-get install -y libssl-dev python3-gpg pinentry-tty git python3-pip apache2 wget
 pip3 install https://github.com/ihaywood3/pgp-mime/archive/master.zip
+pip3 install bitshares
 if [ -d aud-gateway ] ; then
     cd aud-gateway
     git pull
@@ -28,7 +29,7 @@ a2ensite gateway
 a2dissite 000-default
 systemctl restart apache2
 
-mkdir /var/local/gpg-keys
-chown www-data:www-data /var/local/gpg-keys
-chmod 700 /var/local/gpg-keys/
-sudo -u www-data -g www-data gpg --homedir /var/local/gpg-keys/ --impot < ~/aud-gateway/web/key.as
+mkdir /home/www-data
+chown www-data:www-data /home/www-data
+chmod 700 /home/www-data
+sudo -H -u www-data -g www-data gpg  --import < ~/aud-gateway/web/key.asc
