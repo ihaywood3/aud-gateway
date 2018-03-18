@@ -1,11 +1,47 @@
 \documentclass[12pt]{report}
+\usepackage{graphicx}
+%\usepackage{soul}
+
+\usepackage{cmbright}
+\renewcommand{\familydefault}{\rmdefault}
+\usepackage[T1]{fontenc}
 
 \begin{document}
-\renewcommand{\thechapter}{I}%
-\chapter*{Introduction}
+\includegraphics{logo.eps} \parbox[b]{5in}{\sffamily RIVER STONE TECHNOLOGIES \\
+  64 Robert Dr Mornington 3931\\ w river-stone.com.au \\ e enquiries@river-stone.com }
+
+\rmfamily
+\vspace{1.5in}
+
+\begin{center}
+  {\Huge \bfseries AML/CTF Programme}
+  \vspace{1in}
+
+  {\large Version 1, March 2018}
+ \end{center}
+\pagenumbering{roman}                   % roman page number for toc
+\setcounter{page}{1}                    % make it start with "ii"
+
+
 
 \renewcommand{\thechapter}{A}%
-\chapter*{Part A -- AML/TF Policy}
+\chapter*{Part A -- AML/CTF Policy}
+
+\section{Introduction}
+
+\subsection{Business Structure}
+
+River Stone Technologies is  a small business operating as a digital currency exchange.
+
+It is an Australian proprietary company with one director and shareholder,
+Dr. Ian Haywood, and no employees.
+
+The exchange focusses on direct exchange of digital currencies on
+the \emph{BitShares} system with Australian currency. It does
+not provide overseas services. It does operate its own market.
+
+The company does not have employees and does not operate any physical
+branches/outlets, all services ar eprovided online.
 
 \section{Roles and Reporting}
 
@@ -14,6 +50,6 @@
 \section{Review of Policy}
 
 \renewcommand{\thechapter}{B}%
-\chapter*{Part B -- Customer identification}
+\chapter*{Part B -- Customer Identification}
 
 \end{document}
