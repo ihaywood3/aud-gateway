@@ -1,6 +1,6 @@
 #set terminal epslatex size 3.5,2.62
 #set output 'logo.tex'
-set terminal postscript eps enhanced size 1,0.75 
+set terminal eps enhanced size 1.25,1 
 set output 'logo.eps'
 unset key
 clear
@@ -24,3 +24,4 @@ plot [-8:8] 0.3 * sin(x*2.0)-2+(0.14*x)**2 ls 1, \
             0.3 * sin(x*2.)+2.0-(0.14*x)**2 ls 1, \
             0.3 * sin(x*2.0)+3-(0.14*x)**2 ls 1, \
             0.3 * sin(x*2.0)+4-(0.14*x)**2 ls 1
+### set output
