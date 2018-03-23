@@ -1,11 +1,10 @@
 \documentclass[12pt]{report}
 \usepackage{graphicx}
-%\usepackage{soul}
-
+%\usepackage{titlesec} 
+\renewcommand{\chaptername}{Part}
 \usepackage{cmbright}
 \renewcommand{\familydefault}{\rmdefault}
 \usepackage[T1]{fontenc}
-
 \begin{document}
 \includegraphics{logo} \parbox[b]{5in}{\sffamily RIVER STONE TECHNOLOGIES \\
   64 Robert Dr Mornington 3931\\ w river-stone.com.au \\ e enquiries@river-stone.com }
@@ -22,34 +21,284 @@
 \pagenumbering{roman}                   % roman page number for toc
 \setcounter{page}{1}                    % make it start with "ii"
 
+ 
+\renewcommand{\thechapter}{\Alph{chapter}}
+\def\labelsection{\thechapter \thesection}
 
+%\renewcommand{\thechapter}{A}%
+\chapter{AML/CTF Policy}
 
-\renewcommand{\thechapter}{A}%
-\chapter*{Part A -- AML/CTF Policy}
+\section{Business Structure}
 
-\section{Introduction}
-
-\subsection{Business Structure}
-
-River Stone Technologies is  a small business operating as a digital currency exchange.
+River Stone Technologies is  a small business operating a digital currency exchange.
 
 It is an Australian proprietary company with one director and shareholder,
-Dr. Ian Haywood, and no employees.
+Dr. Ian Haywood.
 
 The exchange focusses on direct exchange of digital currencies on
 the \emph{BitShares} system with Australian currency. It does
 not provide overseas services. It does operate its own market.
 
 The company does not have employees and does not operate any physical
-branches/outlets, all services ar eprovided online.
+branches/outlets, all services are provided online.
 
-\section{Roles and Reporting}
+Customer interactions are mostly automated by a computer system
+(henceforth ``the System'') programmed and operated by Dr. Ian Haywood.
 
-\section{Employee Due-Diligence}
+In this document the phrases ``the System will'' and ``the System will not'' mean the
+computer system is programmed to automatically do, or to disallow, a particular action.
 
-\section{Review of Policy}
+\section{Purpose of Programme}
 
-\renewcommand{\thechapter}{B}%
-\chapter*{Part B -- Customer Identification}
+The business is a ``digital currency exchange provider'' within the meaning of the
+\emph{Anti-Money Laundering and Counter-Terrorism Financing Amendment Act} 2017 (Part 2),
+and therefore is required to maintain registration with AUSTRAC, and to have a compliant
+AML/CTF programme, which this document describes.
+
+The programme aims to identify with AML/CTF risks the business faces and the steps
+taken to reduce and mitigate these risks. The programme identifies the level of risk and
+how the programme requirements correspond to the level of risk faced by a facility or the customer group
+using it.
+
+\section{Money Laundering and Terror Financing}
+
+Money laundering refers to the practice of criminal organisations to disguise proceeds of crime. A number of techniques
+are used to achieve this.
+
+\begin{description}
+\item[placement] is introducing funds into the legal financial system;
+\item[layering] refers the use of fake companies and other entities, often operating in series, to obscure the origin of funds.
+\item[structuring] refers to breaking down a transaction into smaller ones to avoid triggering suspicion or threshold
+  safeguards.
+\item[integration] refers to using an apparent legitimate transaction to disguise the source of funds.
+  \item[identity theft] refers to falsifying the identity of the true owner of funds or operator of the account.
+\end{description}
+
+Financial institutions can unwittingly (or, in cases of employee corruption, wittingly) facilitate these transfers
+by allowing criminal entities to use their services.
+
+Terror financing is somewhat different in that the funds in question may have a lawful origin (a terrorist
+sympathiser may wish to contribute their lawful wages, for example), but have an unlawful \emph{destination}, usually overseas.
+The aim is to obscure the destination of the funds and/or the identity of the originator.
+
+The purpose of an AML/CTF programme is to:
+\begin{enumerate}
+\item make ML/TF activities more difficult to initiate or uninviting;
+\item detect possible ML/TF activities as they occur and report;
+\item reduce the amount of damage if they do occur (for example transaction size limits);
+\item provide records law enforcement can access \emph{post hoc} to trace ML/TF activities.
+\end{enumerate}
+
+\section{Specific Risks}
+
+Digital currencies in general are perceived as offering a new level of `privacy' or `secrecy' and have
+been used for criminal purposes such as the \emph{Silk Road} case. The specific currency used
+by the business is \emph{BitShares}, which offers a relatively lower level of privacy: all transactions
+are linked to a named account.
+
+The main anticipated attacks are identity theft, to open accounts under a false name (placement), and
+making withdrawals that can be falsely attributed to profits from trading other digital currencies  (integration). 
+
+\section{Countermeasures}
+
+The key element to prevent abuse is to maintain a link between the BitShares account name and
+a `real-world' identity. Subsequent transactions (even not with the business) can be linked
+and so this reduces the attractiveness of the system to criminal use. This is described in the KYC procedures
+in part B.
+
+\subsection{Limitations of the System}
+
+To reduce the overall risk profile, the following limitations apply across the system
+(as noted the transaction rules are `enforced' by computer code and don't require employee adherence to
+particular rules):
+\begin{enumerate}
+\item Only Australian residents may open accounts;
+\item Accounts may only be opened for individuals and sole traders;
+\item Transactions are limited to \$3,000;
+\item Each account is limited to \$10,000 turnover per week;
+\item No dealings in physical cash;
+\item Monies will only be sent to accounts with Australian-based banks;
+\item Monies will only be received through the BPay system.
+\end{enumerate}
+
+\subsection{Transaction Monitoring}
+
+The company will maintain ongoing surveillance of transactions made with the system. Transactions are automated
+and initiated through the \emph{BitShares} system, so there is not in itself any direct customer contact
+in each transaction.
+
+However each transaction made through the system is recorded . Each record will have:
+\begin{enumerate}
+  \item The date and time of the transaction;
+  \item The BitShares transaction ID;
+  \item The BitShares account name;
+  \item the BSB and account number (for withdrawals);
+  \item the BPay reference number (for deposits).
+\end{enumerate}
+
+All records are maintained for seven years.
+
+Every week, the System will prepare a report of the top 25 accounts (by weekly turnover), and their individual transactions in that week,
+for review by the director. The following patterns are considered to be `red flags':
+\begin{enumerate}
+\item An account suddenly withdrawing or depositing larger amounts compared to its past history;
+\item Accounts doing multiple small transfers for no clear reason (i.e. possible structuring);
+\item Accounts gaining balance without any correspondence to movements in the digital currency markets;
+\end{enumerate}
+
+In this case the director will either attempt to contact the customer for an explanation, or directly make a Suspicious Matter Report to AUSTRAC,
+or make an SMR after contact if the explanation is not satisfactory.
+
+Accounts which give rise to an SMR will be permanently suspended, but records of the transactions and the SMR itself will be retained. Funds
+pending will be returned but on the same `side' (digital for digital, fiat for fiat i.e the transaction itself will not be completed).
+
+Any account that tries to break the transfer limits noted above will also be reviewed by the director.
+
+Correspondence will be via e-mail and all e-mails sent to and from customers will be retained for seven years along with other all customer data.
+
+\subsection{Enhanced Customer Due-Diligence} \label{red-flags}
+
+There is no `enhanced' procedure for high-risk customers who are foreign politically-exposed persons or resident in prescribed countries:
+these customers will not be accepted at all.
+
+Enhanced KYC due-diligence applies to customers who undertake `red flag' transactions as applied above, and customers whose initial
+application is unusual in some way. `Unusual' is not defined in a restricted way but examples include:
+\begin{enumerate}
+\item A customer from a demographic not normally associated with digital currency use
+  such as an older person, a person who seems to have little computer knowledge,
+  limited English speaker (this raises the prospect the true account operator is not the same as the applicant);
+\item A customer who refuses or claims to be unable to supply standard identity documents (driver's licence, passport: refer to section
+  \ref{standard});
+\item a customer who offers poor quality images of documents and claims to be unable to offer better quality;
+\end{enumerate}
+
+In the first instance the customer will be invited to explain. If the explanation is complex, evasive or implausible, the customer will be
+refused an account. IF plausible, they will be invited to complete the `enhanced' or `medium-risk' KYC procedure (see section \ref{enhanced}).
+An example of a plausible explanation would be a disabled person (so has no driver's licence), who doesn't have a current passport.
+
+Extra KYC information gathered in this way will be recorded on the customers file.
+
+\section{Organisational Matters}
+
+These headings are standard in a AML/CTF programme but do not have much applicability to a small business, but are included for completeness.
+
+\subsection{Roles and Reporting}
+
+As a one-person company the director assumes all responsibility for implementing the programme and tracking issues that arise.
+
+\subsection{Employee Due-Diligence}
+
+The director will submit a National Police Check to AUSTRAC. The director will undergo training (a one-day TAFE course
+or similar) in AML/CTF procedures (specifically KYC procedures) used by customer-facing staff in financial institutions.
+
+The director will be familiar with this Programme and relevant AUSTRAC Rules: this familiarisation has been achieved by writing this document. 
+
+\section{Review of Programme}
+
+This policy will be reviewed if the business structure changes (in particular, if the business takes on any
+employees), or if the nature of its products changes,
+
+Failing that, the programme will be reviewed every two years
+
+At review the director will check AUSTRAC's website and materials to see if the requirements have changed.
+The director will also subscribe to AUSTRAC mailing lists, if provided, for this purpose.
+
+Within six months of commencing operation, and within six months of each review, the company will
+organise an external audit of the programme. The audit response and resulting modifications to the programme will be
+recorded.
+
+%\renewcommand{\thechapter}{B}%
+\chapter{Customer Identification}
+
+\section{Standard (Low-Risk) Procedure} \label{standard}
+
+The standard procedure is for low-risk customers.
+\begin{enumerate}
+\item All customers complete an application on the company's website. The website will not
+  accept applications that are not complete. Information gathered is as follows:
+  \begin{enumerate}
+  \item the BitShares ID;
+  \item e-mail address;
+  \item a photograph (usually using a smartphone) of the front of their driver's licence or details page of their passport;
+  \item a photograph of the back of their driver's licence (if this was used);
+  \item a photograph of a secondary identity document (as defined in the AUSTRAC Rules Chapter 2);
+  \item a photograph of the customer themselves (a ``selfie'') holding a piece of paper bearing their BitShares ID;
+  \item customers name, date-of-birth and address;
+  \end{enumerate}
+  \item the application is formatted into an e-mail, encrypted, and sent to the director (all such e-mails are retained);
+  \item the director examines the application and checks the following:
+    \begin{enumerate}
+    \item the images are legible and not modified (``photoshopped''). The resolution of the image must be
+      high enough to permit such a determination: at least 300 dpi \footnote{which is about the
+        same level of detail the average human eye would get from seeing the original, see
+      \texttt{https://jaredjared.com/2012/10/visual-acuity-dpi}};
+    \item they must clearly be colour photographs of a complete driver's licence/passport, including the four edges, not a
+      flatbed scan or photocopy;
+    \item for passports, the secondary identity document must prove the customer's address in Australia;
+    \item the photograph of the customer is a reasonable likeness of the photo on the driver's licence/passport;
+    \item the applicant is over the age of 18;
+    \item the documents match the name and address provided on the application.
+    \end{enumerate}
+  \item the application is then activated on the system if it matches all the above and does not have `red flags' (see section \ref{red-flags}).
+\end{enumerate}
+
+\subsection{Rationale for this Method}
+
+The method described above in \ref{standard} is used by most digital currency exchanges both in Australia and overseas, and so follows
+industry standard practice.
+
+The AUSTRAC Rules define two `example' methods in sections 4.2.11 and 4.2.13, but the Rules are clear alternative methods are permitted
+if they meet risk controls..
+
+\subsubsection{``Documentation-based safe harbour procedure'', 4.2.11}
+
+This method would require that the prospective customer photocopy
+identity documents onto paper, have then certified, and then scan back in to submit an application.
+It forms the basis of the `enhanced' KYC procedure (see section \ref{enhanced}), however it is
+a disproportionate burden for low-risk applications and would not be commercially viable.
+
+\subsubsection{``Electronic-based safe harbour procedure'', 4.2.13}
+
+This method would require the customer enter the ID numbers from key documents and these
+are verified against a third-party database. This approach was rejected for several reasons:
+\begin{enumerate}
+\item it does not ascertain that the applicant is the same person as the ID holder, i.e. it does not protect well against identity theft;
+\item setup costs are considerable for a small business;
+\item it's not significantly faster for a customer (photographing an ID document takes about as long as typing in its serial number);
+\item there is a high rate of `false negatives': bona fide applications rejected without a clear reason, which requires a `fallback' method
+  be in place. 
+\end{enumerate}
+
+\section{Enhanced (Medium-Risk) Procedure} \label{enhanced}
+
+Customers identified on the initial application as medium-risk are not activated on the system, but instead are
+sent a prepared statutory declaration form, in which they declare their name, address and date of birth, and
+that they are not operating the account on behalf of another person or using the funds of another person.
+
+The form is signed by the customer and by a witness authorised to witness statutory declarations in their State,
+and returned, along with certified copies of their identity documents. The form will specify that the
+witness also declare that the customer is a reasonable likeness to the photographic ID presented, or
+that the witness has known the customer (for example, their regular GP).
+
+The requirements follow that of section 4.2.11 of the AUSTRAC Rules: namely both a `primary' and a `secondary' identity
+document.
+
+`Primary documents' include: birth certificate, naturalisation certificate, passport, proof-of-age card,
+and driver's licence. Foreign passports and birth certificates are accepted, if not in English or French
+an accredited translation must be provided.
+
+`Secondary documents' include: utility bills (less than 3 months old), ATO tax statements,
+State Government revenue statements (i.e. land tax), or Centrelink statements (all within twelve months). Foreign
+secondary identity documents are not accepted (because the whole point is to prove Australian residency).
+
+If the customer declares they don't have any primary identification, and wants to present multiple secondary identification
+instead, they will be invited to explain how they opened an Australian-based bank account (which is required to
+make any actual use of a digital currency exchange) and will be expected to provide the same documents.
+
+As noted in part A, there must be a plausible `story' round why this is the case and the documents provided must
+be consistent. The explanation will be recorded on the customer's file.
+They must document, at a minimum, the customer's full name and residential address in Australia.
+
+If these requirements cannot be met the application is refused.
 
 \end{document}

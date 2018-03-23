@@ -1,6 +1,6 @@
 #set terminal epslatex size 3.5,2.62
 #set output 'logo.tex'
-set terminal eps enhanced size 1.25,1 
+set terminal eps enhanced size 1.25, 1 
 set output 'logo.eps'
 unset key
 clear
