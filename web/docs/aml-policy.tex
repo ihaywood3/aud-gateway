@@ -146,7 +146,13 @@ for review by the director. The following patterns are considered to be `red fla
 \item Accounts gaining balance without any correspondence to movements in the digital currency markets;
 \end{enumerate}
 
-In this case the director will either attempt to contact the customer for an explanation, or directly make a Suspicious Matter Report to AUSTRAC,
+\subsection{Ongoing Customer Due-Diligence and AUSTRAC Reporting}
+
+Account ``red-flagged'' for their behaviour in this way proceed to ongoing customer due-diligence
+\footnote{Some AUSTRAC documentation seems to assume a link between ``ongoing'' and ``enhanced'' coustomer due-diligence.
+  The assumption seems to be that an account that behaves susipicously wil lget referred for enhanced KYC procedures. I
+  don't view this as appropriate response for the business: suspicious accounts wil ljust get suspended}.
+The director will either attempt to contact the customer for an explanation, directly make a Suspicious Matter Report to AUSTRAC,
 or make an SMR after contact if the explanation is not satisfactory.
 
 Accounts which give rise to an SMR will be permanently suspended, but records of the transactions and the SMR itself will be retained. Funds
@@ -155,6 +161,9 @@ pending will be returned but on the same `side' (digital for digital, fiat for f
 Any account that tries to break the transfer limits noted above will also be reviewed by the director.
 
 Correspondence will be via e-mail and all e-mails sent to and from customers will be retained for seven years along with other all customer data.
+
+Because the service has a maximum transaction limt well below \$10,000, it is not anticipated the service will need to make Threshold Transaction
+Reports.
 
 \subsection{Enhanced Customer Due-Diligence} \label{red-flags}
 
@@ -173,10 +182,10 @@ application is unusual in some way. `Unusual' is not defined in a restricted way
 \end{enumerate}
 
 In the first instance the customer will be invited to explain. If the explanation is complex, evasive or implausible, the customer will be
-refused an account. IF plausible, they will be invited to complete the `enhanced' or `medium-risk' KYC procedure (see section \ref{enhanced}).
-An example of a plausible explanation would be a disabled person (so has no driver's licence), who doesn't have a current passport.
+refused an account. If plausible, they will be invited to complete the `enhanced' or `medium-risk' KYC procedure (see section \ref{enhanced}).
+An example of a plausible explanation would be a disabled person unable to drive (so has no driver's licence), who doesn't have a current passport.
 
-Extra KYC information gathered in this way will be recorded on the customers file.
+Extra KYC information and customer explanations gathered in this way will be recorded on the customers file.
 
 \section{Organisational Matters}
 
@@ -188,26 +197,39 @@ As a one-person company the director assumes all responsibility for implementing
 
 \subsection{Employee Due-Diligence}
 
-The director will submit a National Police Check to AUSTRAC. The director will undergo training (a one-day TAFE course
+The business does not have employees.
+
+The director will submit a National Police Check to AUSTRAC.
+
+\subsection{AML/CTF risk awareness training programme}
+
+The director will undergo training (a one-day TAFE course
 or similar) in AML/CTF procedures (specifically KYC procedures) used by customer-facing staff in financial institutions.
 
 The director will be familiar with this Programme and relevant AUSTRAC Rules: this familiarisation has been achieved by writing this document. 
+
+\subsection{AUSTRAC feedback}
+
+Feedback from AUSTRAC will be received by the director (who will be the nominated contact for AUSTRAC). If specific feedback is given this
+will precipiate a review of the Programme (see next section) and the feedback will be incorporated into the new programme.
+
+The director will monitor the AUSTRAC website at least six-monthly to see if industry-specific guidance has been released.
+The director will also subscribe to AUSTRAC mailing lists, if provided, for this purpose. New guidance 
+will precipitate a review if the guidance indicates a problem with the current Programme.
 
 \section{Review of Programme}
 
 This policy will be reviewed if the business structure changes (in particular, if the business takes on any
 employees), or if the nature of its products changes,
 
-Failing that, the programme will be reviewed every two years
+Failing that, the programme will be reviewed every year.
 
-At review the director will check AUSTRAC's website and materials to see if the requirements have changed.
-The director will also subscribe to AUSTRAC mailing lists, if provided, for this purpose.
+At review the director will download anew copy of the AUSTRAC Rules and check to see if the requirements have changed.
 
 Within six months of commencing operation, and within six months of each review, the company will
 organise an external audit of the programme. The audit response and resulting modifications to the programme will be
 recorded.
 
-%\renewcommand{\thechapter}{B}%
 \chapter{Customer Identification}
 
 \section{Standard (Low-Risk) Procedure} \label{standard}
@@ -242,31 +264,36 @@ The standard procedure is for low-risk customers.
   \item the application is then activated on the system if it matches all the above and does not have `red flags' (see section \ref{red-flags}).
 \end{enumerate}
 
+Note only individuals and sole traders can have accounts. There is no KYC procedure for companies, trusts, etc, as such accounts will
+not be issued and instead a director/trustee will be invited to apply for an individual account.
+
 \subsection{Rationale for this Method}
 
 The method described above in \ref{standard} is used by most digital currency exchanges both in Australia and overseas, and so follows
 industry standard practice.
 
 The AUSTRAC Rules define two `example' methods in sections 4.2.11 and 4.2.13, but the Rules are clear alternative methods are permitted
-if they meet risk controls..
+if they meet risk controls.
 
 \subsubsection{``Documentation-based safe harbour procedure'', 4.2.11}
 
 This method would require that the prospective customer photocopy
-identity documents onto paper, have then certified, and then scan back in to submit an application.
-It forms the basis of the `enhanced' KYC procedure (see section \ref{enhanced}), however it is
-a disproportionate burden for low-risk applications and would not be commercially viable.
+identity documents onto paper, have them certified, and then scan the paper copies to submit an application online.
+
+It forms the basis of the `enhanced' KYC procedure (see section \ref{enhanced}), however this method was clearly designed for
+applications via post: for an online business it is a considerable extra burden and would not be commercially viable if all customer
+applications had to be by this method.
 
 \subsubsection{``Electronic-based safe harbour procedure'', 4.2.13}
 
-This method would require the customer enter the ID numbers from key documents and these
+This method would require the customer enter the ID numbers from identity documents and these
 are verified against a third-party database. This approach was rejected for several reasons:
 \begin{enumerate}
-\item it does not ascertain that the applicant is the same person as the ID holder, i.e. it does not protect well against identity theft;
-\item setup costs are considerable for a small business;
-\item it's not significantly faster for a customer (photographing an ID document takes about as long as typing in its serial number);
-\item there is a high rate of `false negatives': bona fide applications rejected without a clear reason, which requires a `fallback' method
-  be in place. 
+\item it does not ascertain that the person operating the remote computer is the same person as the ID holder, i.e. it does not protect well against identity theft;
+\item setup costs are considerable for a new business;
+\item nowadays it is not significantly faster for a customer (photographing an ID document with a smartphone takes about as long as typing in its serial number);
+\item there is a high rate of `false negatives': \emph{bona fide} applications are frequently rejected without a clear reason, which requires a `fallback' method
+to  be in place. 
 \end{enumerate}
 
 \section{Enhanced (Medium-Risk) Procedure} \label{enhanced}
@@ -276,15 +303,16 @@ sent a prepared statutory declaration form, in which they declare their name, ad
 that they are not operating the account on behalf of another person or using the funds of another person.
 
 The form is signed by the customer and by a witness authorised to witness statutory declarations in their State,
-and returned, along with certified copies of their identity documents. The form will specify that the
+This is returned, along with certified copies of their identity documents. The form will specify that the
 witness also declare that the customer is a reasonable likeness to the photographic ID presented, or
-that the witness has known the customer (for example, their regular GP).
+that the witness has known the customer (for example, their regular GP). Applications must either
+have photograhic ID or such a statement from the witness.
 
 The requirements follow that of section 4.2.11 of the AUSTRAC Rules: namely both a `primary' and a `secondary' identity
 document.
 
 `Primary documents' include: birth certificate, naturalisation certificate, passport, proof-of-age card,
-and driver's licence. Foreign passports and birth certificates are accepted, if not in English or French
+and driver's licence. Foreign passports and birth certificates are accepted, but if not in English or French
 an accredited translation must be provided.
 
 `Secondary documents' include: utility bills (less than 3 months old), ATO tax statements,
@@ -293,11 +321,12 @@ secondary identity documents are not accepted (because the whole point is to pro
 
 If the customer declares they don't have any primary identification, and wants to present multiple secondary identification
 instead, they will be invited to explain how they opened an Australian-based bank account (which is required to
-make any actual use of a digital currency exchange) and will be expected to provide the same documents.
+make any actual use of a any digital currency exchange) and will be expected to provide the same documents on their
+application.
 
-As noted in part A, there must be a plausible `story' round why this is the case and the documents provided must
-be consistent. The explanation will be recorded on the customer's file.
-They must document, at a minimum, the customer's full name and residential address in Australia.
+As noted in part A, there must be a plausible `story' around why this is the case and the documents provided must
+be consistent with the story. The explanation will be recorded on the customer's file.
+The documents must prove, at a minimum, the customer's full name and residential address in Australia.
 
 If these requirements cannot be met the application is refused.
 

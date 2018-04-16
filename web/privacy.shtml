@@ -9,25 +9,28 @@
     and copies of identifying documents); and logs of all transactions
     performed by you through the system.
   <li>The IP address of the computer you use to access the system may be recorded and associated with your transactions.
-  <li>Your BitShares ID will be recorded, and therefore future transactions, not with the system, can also be associated with your identity. The system itself will not make or record any such an association for transactions not directly with the system, but information provided by me (as described below) could be used by others to make such associations.
+  <li>Your BitShares ID will be recorded, and therefore future transactions, even those not with this system, can also be associated with your identity. 
+The system itself will not make or record any such an association for transactions not directly with the system, but information provided by me (as described below) 
+could be used by others to make such associations.
   <li>Information may be released to AUSTRAC, the Australian Federal Police, or 
 other Australian State 
 or Federal Government agencies as required by law. This may be at the direction of
-a said agency, or at my initiative in circumstances where the law requires this.
+one of the said agencies, or at my initiative in circumstances where the law requires this.
   <li>Without excluding any other laws, the main such circumstance is Suspicious Matter Reports and 
 Threshold Transaction Reports made to AUSTRAC as
     set out in its
     <a href="https://www.legislation.gov.au/Series/F2007L01000">Rules</a>.
-  <li>Your information may be released to an Australian Federal or State Court
-if a receive a lawful order (warrant or subpnoea) to release information to the Court.
-<li> Courts or other Federal agencies may then pass on information to other third parties,
-including private third-parties (such as ligitants in a court-case, as above)
-<li>Your information will not be passed to private third-parties in any other circumstance.
-      <li>You may request changes to your information, or details of what is stored about 
+<li>Your information may be released to an Australian Federal or State Court
+if I receive a lawful order (warrant or subpnoea) to release information to the Court.
+<li>Your information will not be passed to private third-parties by me.
+<li>However, Courts or other Federal agencies may pass on information to third parties,
+including private third-parties (such as ligitants in a court-case). I cannot control what
+Governmental agencies do with your data once it has been released to them.
+<li>You may request changes to your information, or details of what is stored about 
 you, by writing to <tt>privacy@river-stone.com.au</tt>. 
   <li>You may request for your account to be closed, you information will be deleted from the 
-active system, but your information will be retained in offline backups, for a fixed period 
-(five years; or greater if required by law.) You may not request complete removal of your information.
+active system, but your information will be retained in offline backups, for a fixed period as set out in legislation 
+(seven years; or greater if required by law.) You may not request complete removal of your information.
 </ol>
 
 <!--#include virtual="footer.shtml"-->

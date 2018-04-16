@@ -1,0 +1,24 @@
+<!--#set var="title" value="DEXBot Registration" -->
+<!--#include virtual="header.shtml" -->
+
+<p>If you are running DEXBot, please enter the name of the account on which you are running a bot.</p>
+<p>This will be used to generate statistics about the total liquidity provided by DEXBot across the network.</p>
+<p>Only information on the public blockchain is used, this service does not track you in any other way.</p>
+
+<form method="post" action="cgi-bin/dexbot.py" enctype="multipart/form-data">
+   <table class="formfields">
+    <tbody>
+      <tr>
+	<td>BitShares Account ID</td>
+	<td><input type="text" name="bts_account" placeholder="BitShares Account ID" required length="50"></td>
+      </tr>
+      <tr>
+	<td></td>
+	<td><input type="submit" name="Submit" id="submit"></td>
+      </tr>
+    </tbody>
+  </table>
+</form>
+
+
+<!--#include virtual="footer.shtml" -->
