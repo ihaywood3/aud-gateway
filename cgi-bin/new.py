@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 from email.mime.base import MIMEBase
 from email.mime.text import MIMEText
+from email.mime.multipart import MIMEMultipart
 import mimetypes
 from email import encoders
 import io, ruamel.yaml, cgi, mimetypes, os
@@ -16,13 +17,11 @@ def clean_fname(fname):
     fname = fname.replace("\"","")
     return fname
 
-print("Content-Type: text/plain")
-print("")
-
 
 form = cgi.FieldStorage()
 
-parts = []
+parts = MIMEMultipart()
+
 for key in ['drivers1','drivers2','selfie']:
     field = form[key]
     if type(field) is list:
@@ -46,7 +45,7 @@ for key in ['drivers1','drivers2','selfie']:
         m.set_param('filename',fname,'Content-Disposition')
         m.set_payload(payload)
         encoders.encode_base64(m)
-        parts.append(m)
+        parts.attach(m)
 
 class MyForm(dict):
     def __init__(self,form):
@@ -62,22 +61,41 @@ class MyForm(dict):
 
 mf = MyForm(form)
 
-mt = MIMEText("""
-INSERT INTO users (bts_account,email,default_bsb,default_account_no,allow_thirdparty)
-VALUES ('{bts_account}','{email}','{bsb}','{account_no}','{allow_thirdparty}');
+mt = """
+INSERT INTO users (bts_account,email,default_bsb,default_account_no,allow_thirdparty,origin_ip)
+VALUES ('{bts_account}','{email}','{bsb}','{account_no}','f','ORIGINIP');
 
 UPDATE users SET
-   "name" = '',
-   address = '',
-   telephone = '',
-   dob = '',
+   "name" = '{name}',
+   address = '{address} {town} {postcode}',
+   telephone = '{phone}',
+   dob = '{dob}',
    "comment" = ''
 WHERE bts_account = '{bts_account}';
-""".format_map(mf))
+""".format_map(mf)
 
-parts.insert(0,mt)
-os.environ['GNU{GHOME'] = '/var/local/gpg-keys/'
-pgp_mime.pgp.send_mail(parts,"CGI Script <forms@haywood.id.au>","River Stone <ian@haywood.id.au>",'new application',"haywood.id.au",reply_to=mf['email'])
+mt = mt.replace('ORIGINIP', os.environ['REMOTE_ADDR'])
 
+mt2 = MIMEText(mt)
+    
+mt2['Content-Disposition'] = 'inline'
+
+parts.attach(mt2)
+
+parts['Subject'] = "New application"
+parts['From'] = "CGI Script <forms@haywood.id.au>"
+parts['To'] = "River Stone <ian@localhost>"
+parts['Reply-To'] = mf['email']
+
+os.environ['GNUPGHOME'] = '/var/local/gpg-keys/'
+result = pgp_mime.pgp.encrypt(parts, "River Stone")
+
+fd, fname = tempfile.mkstemp(dir='/var/local/mails')
+with os.fdopen(fd, 'w') as f:
+    f.write(result.as_string())
+
+print("""Location: success.shtml
+
+""")
 
         

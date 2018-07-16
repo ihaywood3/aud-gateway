@@ -9,43 +9,31 @@
   <dt>You</dt>
   <dd>The applicant</dd>
   <dt>The Facility</dt>
-  <dd>This facility for converting bitAUD to AUD cash and vice-versa.</dd>
+  <dd>This facility for depositing and withdrawing Australian dollars to the <a href="http://bitshares.org">BitShares decentralised exchange (DEX).</a></dd>
 </dl></p>
 <h4>Nature of Product</h4>
 <p><ol>
-  <li>bitAUD is a crypto-currency designed to maintain a value of one Australian dollar (AUD) over time.</li>
-  <li>bitAUD is part of the <a href="http://bitshares.org">BitShares</a> system. Users of the system must independently
-    have opened and operate a BitShares account before using the Facility.
-  <li>bitAUD that I sell are purchased or borrowed by me on existing markets. I do not issue or control bitAUD.
-</ol></p>
-<h4>bitAUD not backed by Australian currency</h4>
-<p><ol start="4">
-  <li>bitAUD are not backed by any reserve of cash held by me or anyone else. There is no right to redeem
-    or exchange bitAUD for cash.
-  <li>My Facility may cease operating or be suspended, permanently or temporarily, at any time, without warning. You
-    may not be able to exchange bitAUD for cash during this time. (But, You are free to exchange with other providers).
-    In particular, I
-    may suspend one half of the Facility (buying or selling) to maintain adequate stock of cash or bitAUD as required.
-  <li>Once a sale is completed, <b>there is no ongoing contract between You and I</b> -- I do not
-    have responsibility for theft, loss, loss of value, or other problems from Your bitAUD holdings.
-</ol></p>
-<h4>BitShares Settlement Facility</h4>
-<p><ol start="7">
-  <li>The BitShares system includes its own settlement facility, which will redeem all bitAUD for their
-    current value in BitShares. This facility will only provide BItShares, never AUD cash.
-  <li>This facility is not owned or operated by Me. I have no greater access to it than You.
+  <li> <tt>RIVER.AUD</tt> is a digital token designed to have a value of one Australian dollar, tradable on the BitShares DEX.</li>
+  <li> <tt>RIVER.AUD</tt> is issued as a <a href="http://docs.bitshares.org/bitshares/user/uia.html">User-Issued Asset (UIA)</a>.
+  <li> Users must have independently opened and know how to operate a BitShares account before using the Facility.
+  <li> <tt>RIVER.AUD</tt> do not pay a distribution and will never increase in value.
+  <li> This Facility will buy and sell <tt>RIVER.AUD</tt> for $1, minus fees.
 </ol></p>
 <h4>Ongoing Risks</h4>
-<p><ol start="9">
-  <li>bitAUD are backed by at least 175% of their value in BitShares at the point of their creation. If the value of BitShares
-    falls by more than 42% from this point, the system may not have enogh reserve to cover all bitAUD on issue (whether sold by me or not)
-    and so bitAUD holders may face a loss, which is potentially unlimited (i.e. holdings have zero value)
-  <li>Like all crypto-currencies, bitAUD are controlled by private keys held on your wallet software. I never hold bitAUD on Your behalf.
+<p><ol start="5">
+  <li> <tt>RIVER.AUD</tt> are not guaranteed to be backed by any reserve of cash held by me or anyone else. There is no ongoing right to redeem
+    or exchange them for cash. They are intended to be swapped for other currencies or digital assets, not to be held longterm or
+    used as a substitute for cash.
+  <li>My Facility may cease operating or be suspended, permanently or temporarily, at any time, without warning. You
+    may not be able to exchange <tt>RIVER.AUD</tt> for cash during this time. 
+  <li>Once a sale is completed, <b>there is no ongoing contract between You and I</b> -- I do not
+    have responsibility for theft, loss, loss of value, or other problems from Your BitShares holdings.
+   <li>Like all crypto-currencies, BitShares tokens are controlled by private keys held on your wallet software. I never hold tokens on Your behalf.
     If keys or passwords are lost, there is no means of recovery.
   <li>Transactions on the BitShares system are completely irreversible, even in clear cases of fraud or theft.  
 </ol></p>
 <h4>KYC and AUSTRAC</h4>
-<p><ol start="12">
+<p><ol start="10">
     <li>You must complete Know-Your-Customer process as required by AUSTRAC.
       See the <a href="privacy.shtml">Privacy Policy</a> and
       <a href="aml-policy.pdf">AML/CTF Policy</a>.
@@ -117,7 +105,7 @@
 	<td>Telephone</td>
 	<td><input type="tel" name="phone" placeholder="02 1234 5678" autocomplete="tel"></td>
       </tr>
-      <tr>
+<!--      <tr>
 	<td>Allow Third-Party Accounts<br/>
 	  <small><a href="instr.shtml#thirdparty">[EXPLANATION]</a></small>
 	</td>
@@ -131,7 +119,7 @@
       <tr>
 	<td></td>
 	<td><input type="submit" name="Submit" id="submit" disabled></td>
-      </tr>
+      </tr> -->
     </tbody>
   </table>
 </form>

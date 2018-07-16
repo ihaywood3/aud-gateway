@@ -1,0 +1,6 @@
+<!--#set var="title" value="Application Received" -->
+<!--#include virtual="header.shtml" -->
+
+<p>Thankyou for your application, you will be contacted with the result via e-mail.</p>
+
+<!--#include virtual="footer.shtml"-->

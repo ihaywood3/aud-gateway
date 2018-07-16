@@ -10,7 +10,7 @@
        <div class="sidebar" id="myTopnav">
 	 <a href="index.shtml">Home</a>
 	 <a href="apply.shtml">Apply</a>
-	 <a href="contact.shtml">Contact</a>
+	 <a href="instr.shtml">Instructions</a>
 	 <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">☰</a>
        </div>
        <div id=main>

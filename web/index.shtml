@@ -1,4 +1,24 @@
 <!--#set var="title" value="Main" -->
 <!--#include virtual="header.shtml" -->
-This is the main page.
+
+<p>Welcome to the AUD gateway for the BitShares DEX. This is a service for Australian users to
+withdraw and deposit funds from <a href="http://bitshares.org">BitShares</a>.
+</p>
+
+<p>To use you need to <a href="apply.shtml">complete the know-your-customer process</a> as required by law.</p>
+
+<h3>Schedule of Fees</h3>
+
+<table>
+  <tr>
+    <td></td><td>Bank</td><td>Gateway</td><td>Total</td>
+  </tr>
+  <tr>
+    <td>Withdraw</td><td>0.0%</td><td>1.1%</td><td>1.1% (0.1% GST)</td>
+  </tr>
+  <tr>
+    <td>Deposit</td><td>3%</td><td>1.1%</td><td>4.1% (0.1% GST)</td>
+  </tr>
+</table>
+
 <!--#include virtual="footer.shtml" -->

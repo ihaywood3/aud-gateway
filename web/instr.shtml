@@ -1,0 +1,50 @@
+<!--#set var="title" value="Instructions" -->
+<!--#include virtual="header.shtml" -->
+
+<h2>Know-Your-Customer Process</h2>
+
+<h3 id="licence">Driver's Licence</h3>
+
+<p>Please use an Australian driver's licence. You can scan or photograph it with a smartphone. It needs to be legible and the ID
+  clearly visible.</p>
+
+<p>If you have changed address you may need to upload a photo of the back of the licence with your current address on it.</p>
+
+<h3 id="selfie">Self-photograph</h3>
+
+<p>
+Please take a photograph of yourself, holding a piece of paper with your BitShares ID on it. </p>
+
+<p>It needs to be clear enough so I can read the piece of paper, and see that you are the same person as on the licence.</p>
+
+<h3 id="bsb">BSB and Account Number</h3>
+
+<p>This is required to withdraw money (otherwise I have no idea where to send it), but you can leave it blank if you only want to
+  deposit.</p>
+
+<h2 id="using">Using the Service</h2>
+
+<h3>Logging In</h3>
+
+<p>This website doesn't have a login and you don't set a password: once you have completed KYC everything is done through the
+BitShares wallet.</p>
+
+<h3>Depositing Cash</h3>
+
+<p>When your account has been verified, you will be e-mailed with BPay ID and biller ID. You can make payments using Australia Post
+  or online banking. Once processed (which can take 1--2 business days) the corresponding amount (minus fees) will
+  be deposited in your BitShares account, as <tt>RIVER.AUD</tt> tokens.</p>
+<p>Through the BitShares DEX you can then sell the tokens for BTS (the core BitShares currency), you need to refer
+  to the BitShares <a href="http://docs.bitshares.org">documentation</a> for how to do this.</p>
+
+<h3>Withdrawing Cash</h3>
+
+<p>You need to purchase <tt>RIVER.AUD</tt> tokens on the BitShares DEX</p>
+<p>Then send the tokens to BitShares account <tt>river.aud4</tt></p>
+<p>The same amount, less fees, will be same to your account by EFT, again 1--2 business days.</p>
+
+<h3>Problems</h3>
+
+<p>Please contact <tt>info@river-stone.com.au</tt>. Please include your BitShares ID and the transaction ID if known.</p>
+
+<!--#include virtual="footer.shtml"-->
