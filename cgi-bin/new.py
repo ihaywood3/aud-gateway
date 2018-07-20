@@ -18,7 +18,7 @@ def clean_fname(fname):
     return fname
 
 
-form = cgi.FieldStorage()
+#form = cgi.FieldStorage()
 
 parts = MIMEMultipart()
 
@@ -59,7 +59,18 @@ class MyForm(dict):
         for i in range(0,32): s = s.replace(chr(i),repr(chr(i)))
         return s
 
-mf = MyForm(form)
+#mf = MyForm(form)
+
+mf = {'bts_account': 'ihaywood3',
+      'email':'ihaywood3@gmail.com',
+      'bsb':'633000',
+      'account_no':'123456',
+      'name':'Ian Haywoood',
+      'address':'1 Foo St',
+      'town':'Nowhere',
+      'postcode':'1111',
+      'phone':'1234',
+      'dob':'1973-5-14'}
 
 mt = """
 INSERT INTO users (bts_account,email,default_bsb,default_account_no,allow_thirdparty,origin_ip)
@@ -87,14 +98,14 @@ parts['From'] = "CGI Script <forms@haywood.id.au>"
 parts['To'] = "River Stone <ian@localhost>"
 parts['Reply-To'] = mf['email']
 
-os.environ['GNUPGHOME'] = '/var/local/gpg-keys/'
+#os.environ['GNUPGHOME'] = '/var/local/gpg-keys/'
 result = pgp_mime.pgp.encrypt(parts, "River Stone")
 
 fd, fname = tempfile.mkstemp(dir='/var/local/mails')
 with os.fdopen(fd, 'w') as f:
     f.write(result.as_string())
 
-print("""Location: success.shtml
+print("""Location: /success.shtml
 
 """)
 
