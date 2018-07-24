@@ -1,0 +1,9 @@
+[Unit]
+Description=Flexepin Socket
+
+[Socket]
+ListenStream=/run/flexepin.socket
+Accept=yes
+
+[Install]
+WantedBy=sockets.target
