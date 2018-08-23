@@ -28,10 +28,8 @@ setup(
     ],
     },
     install_requires=[
-        "dexbot"
-    ],
-    dependency_links=[
-        "http://github.com/ihaywood3/DEXBot/tarball/master#egg=dexbot=0.1.0"
+        "bitshares",
+        "uptick"
     ],
     include_package_data=True,
 )
