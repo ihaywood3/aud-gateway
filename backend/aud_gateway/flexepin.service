@@ -4,7 +4,7 @@ Requires=flexepin.socket
 
 [Service]
 Type=simple
-ExecStart=/usr/bin/python3 /srv/pi/aud-gateway/backend/flexepin.py %i
+ExecStart=/usr/bin/python3 /srv/home/pi/aud-gateway/backend/aud_gateway/flexepin.py %i
 StandardInput=socket
 StandardError=journal
 TimeoutStopSec=5
