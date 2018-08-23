@@ -33,11 +33,7 @@ Please take a photograph of yourself, holding a piece of paper with your BitShar
 
 <h3>Depositing Cash</h3>
 
-<p>When your account has been verified, you will be e-mailed to confirm this is successful. You can make deposits using several different
-  methods, and the corresponding amount (minus fees) will
-  be deposited in your BitShares account, as <tt>RIVER.AUD</tt> tokens.</p>
-<p>Through the BitShares DEX you can then sell the tokens for BTS (the core BitShares currency), you need to refer
-  to the BitShares <a href="http://docs.bitshares.org">documentation</a> for how to do this.</p>
+<p>When your account has been verified, you will be e-mailed with confirmation.</p>
 
 <h4>1. Australia Post Money Order</h4>
 
@@ -70,9 +66,10 @@ Again processing will take 1&ndash;2 business days.</p>
 </table>
 
 <p><b>NOTE:</b> Do NOT send money to this account by EFT or Internet banking: it must be an in-person deposit at a Commonwealh branch.
-  This is a rule of the bank which I cannot alter.</p>
+  This is a rule of the bank which I cannot alter. Similiarly do not use the Commonwealth Bank deposit ATMs, as these do not allow
+you to set the reference ID (I am working on this)</p>
 
-<h4>Flexepin (COMING SOON)</h4>
+<h4>3. Flexepin (COMING SOON)</h4>
 
 <a href="https://www.flexepin.com/">flexepin</a> is a voucher system that can be purchased at BP petrol stations and some newsagents,
 see their website for <a href="https://www.flexepin.com/sales_outlet_finder/">locations</a>.</p>
@@ -81,9 +78,16 @@ see their website for <a href="https://www.flexepin.com/sales_outlet_finder/">lo
 
 <p>This will be the one method that uses this website. It will be the fastest method: should be 1&ndash;2 hours, anytime.</p>
 
+<h4>What to do with <tt>RIVER.AUD</tt></h4>
+
+<p>Through the BitShares DEX you can then sell the tokens for BTS (the core BitShares currency) on the
+  <a href="https://wallet.bitshares.org/#/market/RIVER.AUD_BTS">market,</a> you need to refer
+  to the BitShares <a href="http://docs.bitshares.org">documentation</a> for how to do this.</p>
+
+
 <h3>Withdrawing Cash</h3>
 
-<p>You need to purchase <tt>RIVER.AUD</tt> tokens on the BitShares DEX.</p>
+<p>You need to purchase <tt>RIVER.AUD</tt> tokens on the <a href="https://wallet.bitshares.org/#/market/RIVER.AUD_BTS">BitShares DEX,</a>
 <p>Then send the tokens to BitShares account <tt>river.aud4</tt></p>
 <p>The same amount, less the fee of 1.1%, will be sent to your account by EFT, again 1&ndash;2 business days.</p>
 
