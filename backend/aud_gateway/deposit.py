@@ -7,15 +7,18 @@ from driver import *
 from bitshares.account import Account
 from bitshares.asset import Asset
                         
-def deposit(i, fee, asset_symbol):
+def deposit(i, method):
     """
     i: the InputTx
     fee: in basis points
 
     either succeeds returning BTS txid, or throws exception
     """
+    fee = Decimal(config[method]['fee'])
+    asset_symbol = config[method]['asset']
     asset = Asset(asset_symbol)
     dest_acct = Account(i.bts_account)
+    i.date = i.date or time.strftime("%Y-%m-%d")
     cur = conn.cursor()
     try:
         fee = round(i.amount * fee / Decimal("10000"), 2)
@@ -32,9 +35,11 @@ def deposit(i, fee, asset_symbol):
         conn.commit()
         raise
     conn.commit()
-    return bts_tx_id
+    return bts_tx_id, i.amount - fee
 
-def print_tx(tx, i, fee, asset_symbol):
+def print_tx(tx, i, method):
+    fee = Decimal(config[method]['fee'])
+    asset_symbol = config[method]['asset']
     fee = round(i.amount * fee / Decimal("10000"), 2)
     print("""Paid {} {} to {} keeping fee {}
 BTS txid {}""".format(str(i.amount), asset_symbol, i.bts_account, str(fee), repr(tx)))
@@ -52,8 +57,6 @@ comment: a free text comment
 """)
     else:
         method = sys.argv[1]
-        fee = Decimal(config[method]['fee'])
-        asset_symbol = config[method]['asset']
         if len(sys.argv) > 2:
             dest_acct = sys.argv[2]
             amount = Decimal(sys.argv[3])
@@ -66,14 +69,14 @@ comment: a free text comment
                     if len(sys.argv) > 6:
                         comment = " ".join(sys.argv[6:])
             i = InputTx(dest_acct, amount, date, comment, fiat_txid)
-            tx = deposit(i, fee, asset_symbol)
-            print_tx(tx, i, fee, asset_symbol)
+            tx, actually_paid = deposit(i, method) 
+            print_tx(tx, i, method)
         else:
-            for i in get_function(config['method']['reader']) ():
+            for i in get_function(config[method]['reader']) ():
                 try:
-                    tx = deposit(i, fee, asset_symbol)
-                    print_tx(tx, i, fee, asset_symbol)
+                    tx, actually_paid = deposit(i, method)
+                    print_tx(tx, i, method)
                 except:
                     traceback.print_exc()
                     print("ON TRANSACTION:")
-                    print_tx(None, i, fee, asset_symbol)
+                    print_tx(None, i, method)

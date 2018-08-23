@@ -74,16 +74,17 @@ you to set the reference ID (I am working on this)</p>
 <a href="https://www.flexepin.com/">flexepin</a> is a voucher system that can be purchased at BP petrol stations and some newsagents,
 see their website for <a href="https://www.flexepin.com/sales_outlet_finder/">locations</a>.</p>
 
-<p>Flexepin charge a fee of %2.9, plus my fee of 1.1%, so total fee of 4%.</p>
+<p>Flexepin charge a fee of %3.9, plus my fee of 1.1%, so total fee of 5%. (Yes that's a lot, that's why I
+provide other methods)</p>
 
-<p>This will be the one method that uses this website. It will be the fastest method: should be 1&ndash;2 hours, anytime.</p>
+<p>This will be the one method that uses
+  <a href="/index.shtml#flexepin">this website.</a> It will be the fastest method: should be 1&ndash;2 hours, anytime.</p>
 
 <h4>What to do with <tt>RIVER.AUD</tt></h4>
 
 <p>Through the BitShares DEX you can then sell the tokens for BTS (the core BitShares currency) on the
   <a href="https://wallet.bitshares.org/#/market/RIVER.AUD_BTS">market,</a> you need to refer
   to the BitShares <a href="http://docs.bitshares.org">documentation</a> for how to do this.</p>
-
 
 <h3>Withdrawing Cash</h3>
 
