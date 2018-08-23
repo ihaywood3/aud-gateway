@@ -17,7 +17,7 @@ withdraw and deposit funds from <a href="http://bitshares.org">BitShares</a>.
     <td>Withdraw</td><td>0.0%</td><td>1.1%</td><td>1.1% (0.1% GST)</td>
   </tr>
   <tr>
-    <td>Deposit</td><td>3%</td><td>1.1%</td><td>4.1% (0.1% GST)</td>
+    <td>Deposit (Bank)</td><td>0%</td><td>1.1%</td><td>4.1% (0.1% GST)</td>
   </tr>
 </table>
 

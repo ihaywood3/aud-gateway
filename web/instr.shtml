@@ -31,15 +31,39 @@ BitShares wallet.</p>
 
 <h3>Depositing Cash</h3>
 
-<p>When your account has been verified, you will be e-mailed with BPay ID and biller ID. You can make payments using Australia Post
-  or online banking. Once processed (which can take 1--2 business days) the corresponding amount (minus fees) will
+<p>When your account has been verified, you will be e-mailed with confirmation.</p>
+<p>You can deposit <b>in person</b> at any Commonwealth Bank branch using the following details:
+  <table>
+    <tr>
+      <th>BSB</th>
+      <td>062 948</td>
+    </tr>
+    <tr>
+      <th>Account Number</th>
+      <td>2009 2314</td>
+    </tr>
+    <tr>
+      <th>Account Name</th>
+      <td>River Stone</td>
+    </tr>
+    <tr>
+      <th>Reference</th>
+      <td><i>Your BitShares ID</i></td>
+    </tr>
+  </table></p>
+
+  <p>Once processed (which can take 1--2 business days) the corresponding amount (minus fees) will
   be deposited in your BitShares account, as <tt>RIVER.AUD</tt> tokens.</p>
-<p>Through the BitShares DEX you can then sell the tokens for BTS (the core BitShares currency), you need to refer
+<p>Through the BitShares DEX you can then sell the tokens for BTS (the core BitShares currency) on the
+  <a href="https://wallet.bitshares.org/#/market/RIVER.AUD_BTS">market,</a> you need to refer
   to the BitShares <a href="http://docs.bitshares.org">documentation</a> for how to do this.</p>
+
+<p><b>It must be an in-person deposit over-the counter.</b> Internet banking transfers are not allowed as they are reversible. You
+  can't use the Commonwealth deposit ATMs as there is no way to specify your ID (I'm looking into this).</p>
 
 <h3>Withdrawing Cash</h3>
 
-<p>You need to purchase <tt>RIVER.AUD</tt> tokens on the BitShares DEX</p>
+<p>You need to purchase <tt>RIVER.AUD</tt> tokens on the <a href="https://wallet.bitshares.org/#/market/RIVER.AUD_BTS">BitShares DEX,</a>
 <p>Then send the tokens to BitShares account <tt>river.aud4</tt></p>
 <p>The same amount, less fees, will be same to your account by EFT, again 1--2 business days.</p>
 

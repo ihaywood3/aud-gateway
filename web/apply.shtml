@@ -15,15 +15,15 @@
 <p><ol>
   <li> <tt>RIVER.AUD</tt> is a digital token designed to have a value of one Australian dollar, tradable on the BitShares DEX.</li>
   <li> <tt>RIVER.AUD</tt> is issued as a <a href="http://docs.bitshares.org/bitshares/user/uia.html">User-Issued Asset (UIA)</a>.
-  <li> Users must have independently opened and know how to operate a BitShares account before using the Facility.
-  <li> <tt>RIVER.AUD</tt> do not pay a distribution and will never increase in value.
-  <li> This Facility will buy and sell <tt>RIVER.AUD</tt> for $1, minus fees.
+  <li> Users must have independently opened and learned how to operate a BitShares account before using the Facility.
+  <li> <tt>RIVER.AUD</tt> will never pay a distribution and will never increase in value.
+  <li> This Facility will buy and sell <tt>RIVER.AUD</tt> for one Australian dollar each, minus fees.
 </ol></p>
 <h4>Ongoing Risks</h4>
 <p><ol start="5">
   <li> <tt>RIVER.AUD</tt> are not guaranteed to be backed by any reserve of cash held by me or anyone else. There is no ongoing right to redeem
     or exchange them for cash. They are intended to be swapped for other currencies or digital assets, not to be held longterm or
-    used as a substitute for cash.
+    used as a substitute for cash for payments.
   <li>My Facility may cease operating or be suspended, permanently or temporarily, at any time, without warning. You
     may not be able to exchange <tt>RIVER.AUD</tt> for cash during this time. 
   <li>Once a sale is completed, <b>there is no ongoing contract between You and I</b> -- I do not

@@ -1,9 +1,12 @@
 <!DOCTYPE html>
 <html lang="en"><head>
       <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-  		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="style.css" />
-		<title>BitShares-AUD Gateway Service: <!--#echo var="title" --></title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="BitShares-AUD gateway service">
+      <meta name="keywords" contents="bitshares,crypto,aud,gateway">
+      <meta name="author" content="River Stone Technologies Pty Ltd">
+      <link rel="stylesheet" href="style.css" />
+      <title>BitShares-AUD Gateway Service: <!--#echo var="title" --></title>
    </head>
    <body>
      <div id="content">

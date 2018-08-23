@@ -7,6 +7,7 @@ apt-get update
 apt-get install -y libssl-dev python3-gpg pinentry-tty git python3-pip apache2 wget
 pip3 install https://github.com/ihaywood3/pgp-mime/archive/master.zip
 pip3 install bitshares
+pip3 install requests
 if [ -d aud-gateway ] ; then
     cd aud-gateway
     git pull
