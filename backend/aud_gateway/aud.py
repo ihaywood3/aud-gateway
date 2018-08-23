@@ -1,5 +1,6 @@
 from driver import *
 
+import csv
 
 class Driver(BaseDriver):
     
@@ -117,8 +118,7 @@ class Driver(BaseDriver):
             self.field(32, self.format_text(tx.account_name))
             self.field(18, self.format_text(tx.comment))
             self.field(7, self.format_bsb(self.config['aba']['originating_bsb']))
-            self.field(9, self.format_account(self.config['aba']['originating_account_number']), ">", "0")
-            
+            self.field(9, self.format_account(self.config['aba']['originating_account_number']), ">", "0")            
             self.field(16, tx.bts_account)
             self.field(8, 0) # withholding tax
             self.nl()
@@ -137,9 +137,14 @@ class Driver(BaseDriver):
         if self.total_lines == 0:
             sys.stderr.write("WARNING: no actual ABA lines\n")
 
-    def input_data(self, cur=None):
-        for row in csv.reader(sys.stdin):
-            date = row[0]
-            amount = Decimal(row[1])
-            acct = "1.2."+row[2]
-            yield InputTx(acct, amount, date)
+# for now really basic csv format
+def bank_csv(self, cur=None, format="csv"):
+    for row in csv.reader(sys.stdin):
+        date = row[0]
+        amount = Decimal(row[1])
+        acct = row[2]
+        if len(row) > 3:
+            comment = row[3]
+        else:
+            comment = ""
+        yield InputTx(acct, amount, date, comment)
