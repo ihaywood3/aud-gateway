@@ -57,21 +57,21 @@ class Flexepin:
             return requests.get(url, headers=headers)
 
     def get_signature(self, payload):
-        return hmac.new(self.secret, payload, hashlib.sha256).hexdigest()
+        return hmac.new(bytes(self.secret, 'ascii'), bytes(payload, 'utf-8'), hashlib.sha256).hexdigest()
 
 
-key = 'DYEV7IR3NIAV7JIM'
-secret = 'lmMWKaA3JzjI5eu3'
+# key = 'DYEV7IR3NIAV7JIM'
+# secret = 'lmMWKaA3JzjI5eu3'
 
-fp = Flexepin(key, secret)
+# fp = Flexepin(key, secret)
 
-pin = '3948759238498249'
-terminalId = 'someterminalID'
-transId = 'unique1234'
+# pin = '3948759238498249'
+# terminalId = 'someterminalID'
+# transId = 'unique1234'
 
-print(fp.do_private_query('GET', 'status', None).text)
+# print(fp.do_private_query('GET', 'status', None).text)
 
-print(fp.do_private_query('GET', 'voucher/validate/{0}/{1}/{2}'.format(pin, terminalId, transId), None).text)
+# print(fp.do_private_query('GET', 'voucher/validate/{0}/{1}/{2}'.format(pin, terminalId, transId), None).text)
 
-print(fp.do_private_query('PUT', 'voucher/redeem/{0}/{1}/{2}'.format(pin, terminalId, transId), {"customer_ip":"192.168.0.1"}).text)
+# print(fp.do_private_query('PUT', 'voucher/redeem/{0}/{1}/{2}'.format(pin, terminalId, transId), {"customer_ip":"192.168.0.1"}).text)
 
