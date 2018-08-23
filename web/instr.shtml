@@ -26,25 +26,70 @@ Please take a photograph of yourself, holding a piece of paper with your BitShar
 
 <h3>Logging In</h3>
 
-<p>This website doesn't have a login and you don't set a password: once you have completed KYC everything is done through the
-BitShares wallet.</p>
+<p>This website doesn't have a login and you don't set a password here: once you have completed KYC everything is done through the
+  BitShares wallet, except for one deposit method.</p>
+
+<p>I don't assign user IDs: your existing BitShares ID is your identifier for this service.</p> 
 
 <h3>Depositing Cash</h3>
 
-<p>When your account has been verified, you will be e-mailed with BPay ID and biller ID. You can make payments using Australia Post
-  or online banking. Once processed (which can take 1--2 business days) the corresponding amount (minus fees) will
+<p>When your account has been verified, you will be e-mailed to confirm this is successful. You can make deposits using several different
+  methods, and the corresponding amount (minus fees) will
   be deposited in your BitShares account, as <tt>RIVER.AUD</tt> tokens.</p>
 <p>Through the BitShares DEX you can then sell the tokens for BTS (the core BitShares currency), you need to refer
   to the BitShares <a href="http://docs.bitshares.org">documentation</a> for how to do this.</p>
 
+<h4>1. Australia Post Money Order</h4>
+
+You can buy <a href="https://auspost.com.au/money-insurance/transfer-money/domestic-money-transfer-money-orders">
+  Australia Post Money Orders</a> online and e-mail the money order to
+<a href="mailto:money.orders@river-stone.com.au"><tt>money.orders@river-stone.com.au</tt></a>. Quote your BitShares ID in the e-mail.</p>
+<p>These take 1&ndash;2 business days
+to process. Make the money order to &ldquo;River Stone Technologies.&rdquo; The money order costs $6.95 and my processing fee is 1.1%.</p>
+
+<p><b>NOTE:</b> only electronic money orders are accepted, not paper ones.</p>
+
+<h4>2. Bank cash deposit</h4>
+
+<p>You can deposit cash at a Commonweath Bank branch into the facility account. My processing fee is 1.1% and there is no extra fee.
+Again processing will take 1&ndash;2 business days.</p>
+
+<table border=1>
+  <tr>
+    <td>BSB</td><td>062948</td>
+  </tr>
+  <tr>
+    <td>Account Number</td><td>20092314</td>
+  </tr>
+  <tr>
+    <td>Account Name</td><td>River Stone Technologies</td>
+  </tr>
+  <tr>
+    <td>Reference</td><td>Your BitShares ID</td>
+  </tr>
+</table>
+
+<p><b>NOTE:</b> Do NOT send money to this account by EFT or Internet banking: it must be an in-person deposit at a Commonwealh branch.
+  This is a rule of the bank which I cannot alter.</p>
+
+<h4>Flexepin (COMING SOON)</h4>
+
+<a href="https://www.flexepin.com/">flexepin</a> is a voucher system that can be purchased at BP petrol stations and some newsagents,
+see their website for <a href="https://www.flexepin.com/sales_outlet_finder/">locations</a>.</p>
+
+<p>Flexepin charge a fee of %2.9, plus my fee of 1.1%, so total fee of 4%.</p>
+
+<p>This will be the one method that uses this website. It will be the fastest method: should be 1&ndash;2 hours, anytime.</p>
+
 <h3>Withdrawing Cash</h3>
 
-<p>You need to purchase <tt>RIVER.AUD</tt> tokens on the BitShares DEX</p>
+<p>You need to purchase <tt>RIVER.AUD</tt> tokens on the BitShares DEX.</p>
 <p>Then send the tokens to BitShares account <tt>river.aud4</tt></p>
-<p>The same amount, less fees, will be same to your account by EFT, again 1--2 business days.</p>
+<p>The same amount, less the fee of 1.1%, will be sent to your account by EFT, again 1&ndash;2 business days.</p>
 
 <h3>Problems</h3>
 
-<p>Please contact <tt>info@river-stone.com.au</tt>. Please include your BitShares ID and the transaction ID if known.</p>
+<p>Please contact <a href="mailto:info@river-stone.com.au?subject=transaction+problem"><tt>info@river-stone.com.au</tt></a>. Please include your BitShares user ID and the
+  BitShares transaction ID if known.</p>
 
 <!--#include virtual="footer.shtml"-->

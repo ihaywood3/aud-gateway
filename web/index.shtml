@@ -5,11 +5,11 @@
 withdraw and deposit funds from <a href="http://bitshares.org">BitShares</a>.
 </p>
 
-<p>To use you need to <a href="apply.shtml">complete the know-your-customer process</a> as required by law.</p>
+<p>To use you first need to <a href="apply.shtml">complete the know-your-customer process</a> as required by law.</p>
 
-<h3>Schedule of Fees</h3>
+<h2>Schedule of Fees</h2>
 
-<table>
+<table border=1>
   <tr>
     <td></td><td>Bank</td><td>Gateway</td><td>Total</td>
   </tr>
@@ -17,8 +17,28 @@ withdraw and deposit funds from <a href="http://bitshares.org">BitShares</a>.
     <td>Withdraw</td><td>0.0%</td><td>1.1%</td><td>1.1% (0.1% GST)</td>
   </tr>
   <tr>
-    <td>Deposit</td><td>3%</td><td>1.1%</td><td>4.1% (0.1% GST)</td>
+    <td>Deposit</td><td>Varies</td><td>1.1%</td><td>Varies (0.1% GST)</td>
   </tr>
 </table>
+
+<h2>Redeem Flexepin voucher</h2>
+
+<p>Enter flexepin code:</p>
+
+<form method="post" action="cgi-bin/flexepin.py">
+  <p>
+    <input type="number" name="pin1" placeholder="1234" length="4" pattern="[0-9]{4}" required> 
+    <input type="number" name="pin2" placeholder="5678" length="4" pattern="[0-9]{4}" required> 
+    <input type="number" name="pin3" placeholder="9012" length="4" pattern="[0-9]{4}" required> 
+    <input type="number" name="pin4" placeholder="3456" length="4" pattern="[0-9]{4}" required> 
+    <input type="number" name="pin5" placeholder="7890" length="4" pattern="[0-9]{0,4}"></p>
+  <p><input type="submit" name="Submit" id="submit"></p>
+</form> 
+
+<p><a href="https://www.flexepin.com/sales_outlet_finder/">Where to buy</a></p>
+
+<h2>Contact</h2>
+
+<p><a href="mailto:info@river-stone.com.au"><tt>info@river-stone.com.au</tt></a>.
 
 <!--#include virtual="footer.shtml" -->

@@ -20,9 +20,9 @@ def clean_fname(fname):
 
 #form = cgi.FieldStorage()
 
-parts = MIMEMultipart()
+parts = []
 
-for key in ['drivers1','drivers2','selfie']:
+for key in []: # ['drivers1','drivers2','selfie']:
     field = form[key]
     if type(field) is list:
         field = field[0]
@@ -91,19 +91,10 @@ mt2 = MIMEText(mt)
     
 mt2['Content-Disposition'] = 'inline'
 
-parts.attach(mt2)
+parts.append(mt2)
 
-parts['Subject'] = "New application"
-parts['From'] = "CGI Script <forms@haywood.id.au>"
-parts['To'] = "River Stone <ian@localhost>"
-parts['Reply-To'] = mf['email']
+pgp_mime.pgp.send_mail(parts,"daemon@river-stone.com.au","River Stone <river.stone@haywood.id.au>",'new application',"haywood.id.au",reply_to=mf['email'])
 
-#os.environ['GNUPGHOME'] = '/var/local/gpg-keys/'
-result = pgp_mime.pgp.encrypt(parts, "River Stone")
-
-fd, fname = tempfile.mkstemp(dir='/var/local/mails')
-with os.fdopen(fd, 'w') as f:
-    f.write(result.as_string())
 
 print("""Location: /success.shtml
 

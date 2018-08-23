@@ -5,38 +5,39 @@
 <h4>Definitions</h4>
 <p><dl>
   <dt>I/Me/My</dt>
-  <dd>The provider of this service: "River Stone Technologies" ACN 624 472 457</dd>
+  <dd>The provider of this service: &ldquo;River Stone Technologies Pty Ltd&rdquo;ACN 624 472 457</dd>
   <dt>You</dt>
-  <dd>The applicant</dd>
+  <dd>The Applicant</dd>
   <dt>The Facility</dt>
   <dd>This facility for depositing and withdrawing Australian dollars to the <a href="http://bitshares.org">BitShares decentralised exchange (DEX).</a></dd>
 </dl></p>
 <h4>Nature of Product</h4>
 <p><ol>
-  <li> <tt>RIVER.AUD</tt> is a digital token designed to have a value of one Australian dollar, tradable on the BitShares DEX.</li>
-  <li> <tt>RIVER.AUD</tt> is issued as a <a href="http://docs.bitshares.org/bitshares/user/uia.html">User-Issued Asset (UIA)</a>.
-  <li> Users must have independently opened and know how to operate a BitShares account before using the Facility.
-  <li> <tt>RIVER.AUD</tt> do not pay a distribution and will never increase in value.
-  <li> This Facility will buy and sell <tt>RIVER.AUD</tt> for $1, minus fees.
+    <li> Users must have independently opened and know how to operate a <a href="http://bitshares.org">BitShares</a>
+      account before using the Facility. I do not provide assistance or information about this step.
+    <li> <tt>RIVER.AUD</tt> is a digital token designed to have a value of one Australian dollar, tradable on the BitShares DEX.</li>
+    <li> <tt>RIVER.AUD</tt> is a <a href="http://docs.bitshares.org/bitshares/user/uia.html">User-Issued Asset (UIA)</a>.
+    <li> <tt>RIVER.AUD</tt> is not an investment, does not pay a distribution, and will never increase in value.
+    <li> This Facility works by  buying and selling <tt>RIVER.AUD</tt> for $1, minus fees.
 </ol></p>
 <h4>Ongoing Risks</h4>
 <p><ol start="5">
-  <li> <tt>RIVER.AUD</tt> are not guaranteed to be backed by any reserve of cash held by me or anyone else. There is no ongoing right to redeem
+  <li> <tt>RIVER.AUD</tt> are not guaranteed to be backed by any reserve of cash held by me or anyone else. You do not have a legal right to redeem
     or exchange them for cash. They are intended to be swapped for other currencies or digital assets, not to be held longterm or
-    used as a substitute for cash.
+    used as a substitute for cash payments.
   <li>My Facility may cease operating or be suspended, permanently or temporarily, at any time, without warning. You
     may not be able to exchange <tt>RIVER.AUD</tt> for cash during this time. 
   <li>Once a sale is completed, <b>there is no ongoing contract between You and I</b> -- I do not
     have responsibility for theft, loss, loss of value, or other problems from Your BitShares holdings.
    <li>Like all crypto-currencies, BitShares tokens are controlled by private keys held on your wallet software. I never hold tokens on Your behalf.
     If keys or passwords are lost, there is no means of recovery.
-  <li>Transactions on the BitShares system are completely irreversible, even in clear cases of fraud or theft.  
+  <li>Like most crypto-currencies, transactions on the BitShares system are completely irreversible, even in clear cases of fraud or theft.  
 </ol></p>
 <h4>KYC and AUSTRAC</h4>
 <p><ol start="10">
     <li>You must complete Know-Your-Customer process as required by AUSTRAC.
       See the <a href="privacy.shtml">Privacy Policy</a> and
-      <a href="aml-policy.pdf">AML/CTF Policy</a>.
+      <a href="docs/aml-policy.pdf">AML/CTF Policy</a>.
 </ol></p>
 <h3>Application</h3>
 <form method="post" action="cgi-bin/new.py" enctype="multipart/form-data">
@@ -115,11 +116,11 @@
 	  <input type="radio" name="allow_thirdparty" value="f" id="third_no" checked>
 	  <label for="third_No">&nbsp;No</label>&nbsp;
 	</td>
-      </tr>
+      </tr> -->
       <tr>
 	<td></td>
 	<td><input type="submit" name="Submit" id="submit" disabled></td>
-      </tr> -->
+      </tr>
     </tbody>
   </table>
 </form>
