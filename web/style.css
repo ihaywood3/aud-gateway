@@ -110,11 +110,10 @@ body{
 }
 
 input[type="text"],input[type="number"],input[type="password"],input[type="tel"]{
-    padding: 7px;
-    height: 18px;
-    border-radius: 4px;
+    padding: 4px;
+    height: 20px;
+    border-radius: 2px;
     border: 1px solid #b3b1b1;
-    min-width: 266px;
 }
 input[type="text"]:focus,input[type="number"]:focus,input[type="password"]:focus,input[type="tel"]:focus,select:focus {
     border-color: #66afe9;
@@ -173,9 +172,9 @@ input[type="submit"] {
         float: none;
     }
     input[type="text"], input[type="number"], input[type="password"], input[type="tel"] {
-        padding: 7px;
-        height: 18px;
-        border-radius: 4px;
+        padding: 4px;
+        height: 20px;
+        border-radius: 2px;
         border: 1px solid #b3b1b1;
         min-width: auto;
         width: 85%;
@@ -185,4 +184,16 @@ input[type="submit"] {
         width: 91%;
     }
 
+}
+
+p#flexepin_list input[type="number"] {
+    width: 6em;
+    min-width: 6em;
+    -moz-appearance:textfield;
+}
+
+p#flexepin_list input[type="number"]::-webkit-outer-spin-button,
+p#flexepin_list input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }

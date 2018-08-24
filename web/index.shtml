@@ -26,18 +26,19 @@ withdraw and deposit funds from <a href="http://bitshares.org">BitShares</a>.
 
 <h2 id="flexepin">Redeem Flexepin voucher</h2>
 
-<p>Enter flexepin code:</p>
+
 
 <form method="post" action="/cgi-bin/flexepin.py">
   <p>
     BitShares username: <input type="text" name="btsid" placeholder="BTS username" length="10" pattern="\w{4,50}" required>
   </p>
-  <p>Flexepin: 
-    <input type="number" name="pin1" placeholder="1234" length="4" pattern="[0-9]{4}" required> 
-    <input type="number" name="pin2" placeholder="5678" length="4" pattern="[0-9]{4}" required> 
-    <input type="number" name="pin3" placeholder="9012" length="4" pattern="[0-9]{4}" required> 
-    <input type="number" name="pin4" placeholder="3456" length="4" pattern="[0-9]{4}" required> 
-    <input type="number" name="pin5" placeholder="7890" length="4" pattern="[0-9]{0,4}"></p>
+  <p>Enter flexepin code:</p>
+  <p id="flexepin_list">
+    <input type="number" name="pin1" placeholder="1234" max="9999" required> 
+    <input type="number" name="pin2" placeholder="5678" max="9999" required> 
+    <input type="number" name="pin3" placeholder="9012" max="9999" required> 
+    <input type="number" name="pin4" placeholder="3456" max="9999" required> 
+    <input type="number" name="pin5" placeholder="7890" max="9999" ></p>
   <p><input type="submit" name="Submit" id="submit"></p>
 </form> 
 
